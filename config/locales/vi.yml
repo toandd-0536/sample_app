@@ -1,0 +1,23 @@
+en:
+  layout:
+    base_title: "Ứng dụng mẫu hướng dẫn Ruby on Rails"
+    nav:
+      home: "Trang chủ"
+      help: "Hỗ trợ"
+      login: "Đăng nhập"
+      app_name: "Ứng dụng mẫu"
+  static_pages:
+    home:
+      home_name: "Ứng dụng mẫu"
+      title: "TRANG CHỦ"
+      content:
+        home_link: "Hướng dẫn Ruby on Rails"
+        main: "Đây là trang chủ dành cho ứng dụng mẫu %{home_link}."
+    help:
+      help_name: "Hỗ trợ"
+      title: "HỖ TRỢ"
+      content:
+        help_link: "Trang hỗ trợ hướng dẫn Rails Tutorial"
+        book_link: "Sách hướng dẫn Ruby on Rails"
+        main: "Nhận trợ giúp về Hướng dẫn Ruby on Rails tại %{help_link}.
+          Để nhận trợ giúp về ứng dụng mẫu, hãy xem %{book_link}"

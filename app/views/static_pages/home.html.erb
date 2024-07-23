@@ -1,0 +1,7 @@
+<% provide :title, t('static_pages.home.title') %>
+<h1><%= t('static_pages.home.home_name') %></h1>
+<p>
+  <%= t('static_pages.home.content.main', 
+    home_link: link_to(t('static_pages.home.content.home_link'), 
+        Settings.links.home_page)).html_safe %>
+</p>
