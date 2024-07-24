@@ -1,0 +1,9 @@
+<% provide :title, t('static_pages.help.title') %>
+<h1><%= t('static_pages.help.help_name') %></h1>
+<p>
+ <%= t('static_pages.help.content.main', 
+         help_link: link_to(t('static_pages.help.content.help_link'), Settings.links.help_page), 
+         book_link: link_to(Settings.links.book_page) do
+                     content_tag(:em, t('static_pages.help.content.book_link'))
+                   end).html_safe %>
+</p>
