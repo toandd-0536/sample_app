@@ -2,10 +2,13 @@ links:
   help_page: "http://www.railstutorial.org/help"
   book_page: "http://www.railstutorial.org/book"
   home_page: "http://www.railstutorial.org"
+  gravatar: "https://secure.gravatar.com/avatar/%{gravatar_id}"
+
 models:
-  user: 
+  user:
     name:
       max_length: 50
     email:
       max_length: 255
-      valid_email_regex: /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
+      valid_email_regex: !ruby/regexp '/\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i'
+
