@@ -31,6 +31,13 @@
 
 en:
   layout:
+    header:
+      users: "Users"
+      account: "Account"
+      profile: "Profile"
+      settings: "Settings"
+      logout: "Log out"
+      login: "Login"
     base_title: "Ruby on Rails Tutorial Sample App"
     nav:
       home: "Home"
@@ -61,7 +68,18 @@ en:
       errors_title: "The form contains errors: "
       error:
         name: "error"
+  sessions: 
+    new:
+      new_name: "Log in"
+      title: "LOGIN"
+      btn: "Log in"
+      new_user?: "New User?"
+      signup: "Sign Up Now!"
   controllers:
     users:
       created_message: "User created successfully"
       find_message_error: "No valid user found"
+    sessions:
+      login_message: "Logged in successfully"
+      logout_message: "Logout successfully"
+      danger: "Email or password is incorrect"

@@ -1,9 +1,27 @@
 <header class="navbar navbar-fixed-top navbar-inverse">
-  <div class="container"><%= link_to t('layout.nav.app_name'), "#", id: "logo" %><nav>
+  <div class="container"><%= link_to t("layout.nav.app_name"), "#", id: "logo" %><nav>
       <ul class="nav navbar-nav navbar-right">
-        <li><%= link_to t('layout.nav.home'), "#" %></li>
-        <li><%= link_to t('layout.nav.help'), "#" %></li>
-        <li><%= link_to t('layout.nav.login'), "#" %></li>
+        <li><%= link_to t("layout.nav.home"), "#" %></li>
+        <li><%= link_to t("layout.nav.help"), "#" %></li>
+        <% if logged_in? %>
+          <li><%= link_to t("layout.header.users"), "#" %></li>
+          <li class="dropdown">
+            <%= link_to "#", id: "account", class: "dropdown-toggle", "data-toggle": "dropdown" do %>
+              <%= t("layout.header.account") %>
+              <b class="caret"></b>
+            <% end %>
+            <ul class="dropdown-menu">
+              <li><%= link_to t("layout.header.profile"), current_user %></li>
+              <li><%= link_to t("layout.header.settings"), "#" %></li>
+              <li class="divider"></li>
+              <li> <%= link_to t("layout.header.logout"), logout_path, data: {
+                    turbo_method: :delete
+                  } %></li>
+            </ul>
+          </li>
+        <% else %>
+          <li><%= link_to t("layout.header.login"), login_path %></li>
+        <% end %>
       </ul>
     </nav>
   </div>
