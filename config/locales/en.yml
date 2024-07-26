@@ -75,6 +75,7 @@ en:
       btn: "Log in"
       new_user?: "New User?"
       signup: "Sign Up Now!"
+      remember: "Remember me on this computer"
   controllers:
     users:
       created_message: "User created successfully"

@@ -44,6 +44,7 @@ en:
       btn: "Đăng nhập"
       new_user?: "Người dùng mới?"
       signup: "Đăng ký ngay!"
+      remember: "Ghi nhớ đăng nhập trên thiết bị này"
   controllers:
     users:
       created_message: "Đăng ký người dùng thành công"
