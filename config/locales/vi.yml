@@ -29,14 +29,25 @@ en:
         main: "Nhận trợ giúp về Hướng dẫn Ruby on Rails tại %{help_link}.
           Để nhận trợ giúp về ứng dụng mẫu, hãy xem %{book_link}"
   users:
+    confirm_pass: "Nhập lại mật khẩu"
+    errors_title: "Biểu mẫu có những lỗi sau: "
+    confirm_delete: "Bạn có chắc chắn với hành động này?"
+    _user:
+      btn: "Xóa"
+    error: 
+      name: "lỗi"
+    index:
+      index_name: "Danh sách người dùng"
+      title: "DANH SÁCH"
     new:
       new_name: "Đăng ký"
       title: "ĐĂNG KÝ"
       btn: "Tạo tài khoản"
-      confirm_pass: "Nhập lại mật khẩu"
-      errors_title: "Biểu mẫu có những lỗi sau: "
-      error: 
-        name: "lỗi"
+    edit:
+      edit_name: "Cập nhật thông tin"
+      title: "CẬP NHẬT"
+      btn: "Lưu thay đổi"
+      change_img: "Thay đổi"
   sessions: 
     new:
       new_name: "Đăng nhập"
@@ -44,11 +55,17 @@ en:
       btn: "Đăng nhập"
       new_user?: "Người dùng mới?"
       signup: "Đăng ký ngay!"
-      remember: "Ghi nhớ đăng nhập trên thiết bị này"
+      remember: "Nhớ tôi trên thiết bị này"
   controllers:
+    login_error: "Hãy đăng nhập trước khi truy cập vào đây!"
     users:
       created_message: "Đăng ký người dùng thành công"
+      updated_message: "Cập nhật thông tin thành công"
       find_message_error: "Không tìm thấy người dùng hợp lệ"
+      correct_user_error: "Bạn không thể chỉnh sửa người dùng này!"
+      destroyed_message: "Xóa người dùng thành công"
+      destroyed_message_error: "Bạn không thể xóa người dùng này!"
+      admin_error: "Chỉ admin mới có quyền này"
     sessions:
       login_message: "Đăng nhập thành công"
       logout_message: "Đăng xuất thành công"

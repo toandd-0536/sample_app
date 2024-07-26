@@ -10,7 +10,7 @@ class User < ApplicationRecord
             length: {maximum: Settings.models.user.email.max_length},
             format: {with: Settings.models.user.email.valid_email_regex}
   attr_accessor :remember_token
-
+  scope :ordered, ->{order :created_at}
   class << self
     def new_token
       SecureRandom.urlsafe_base64

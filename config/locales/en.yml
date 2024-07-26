@@ -60,14 +60,25 @@ en:
         main: "Get help on the Ruby on Rails Tutorial at the %{help_link}.
           To get help on this sample app, see the %{book_link}"
   users:
+    confirm_pass: "Confirmation"
+    errors_title: "The form contains errors: "
+    confirm_delete: "Are you sure you want to delete"
+    _user:
+      btn: "delete"
+    error:
+      name: "error"
+    index:
+      index_name: "List Users"
+      title: "LIST USERS"  
     new:
       new_name: "Sign up"
       new_title: "SIGN UP"
       btn: "Create my account"
-      confirm_pass: "Confirmation"
-      errors_title: "The form contains errors: "
-      error:
-        name: "error"
+    edit:
+      new_name: "Update profile"
+      new_title: "UPDATE"
+      btn: "Save changes"
+      change_img: "change"
   sessions: 
     new:
       new_name: "Log in"
@@ -77,9 +88,15 @@ en:
       signup: "Sign Up Now!"
       remember: "Remember me on this computer"
   controllers:
+    login_error: "Please log in."
     users:
       created_message: "User created successfully"
+      updated_message: "Profile updated successfully"
       find_message_error: "No valid user found"
+      correct_user_error: "You cannot edit this user"
+      destroyed_message: "User deleted successfully"
+      destroyed_message_error: "You cannot delete this user!"
+      admin_error: "Only admin has this right"
     sessions:
       login_message: "Logged in successfully"
       logout_message: "Logout successfully"

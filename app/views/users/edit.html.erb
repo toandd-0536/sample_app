@@ -1,0 +1,14 @@
+<% provide :title, t("users.edit.title") %>
+<h1><%= t "users.edit.edit_name" %></h1>
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <% provide :btn do %>
+      <%= t "users.edit.btn" %>
+    <% end %>
+    <%= render "form" %>
+    <div class="gravatar_edit">
+      <%= gravatar_for @user %>
+      <%= link_to t("users.edit.change_img"), Settings.links.edit_gravatar, target: "_blank" %>
+    </div>
+  </div>
+</div>

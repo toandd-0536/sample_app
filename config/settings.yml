@@ -2,8 +2,18 @@ links:
   help_page: "http://www.railstutorial.org/help"
   book_page: "http://www.railstutorial.org/book"
   home_page: "http://www.railstutorial.org"
-  gravatar: "https://secure.gravatar.com/avatar/%{gravatar_id}"
+  gravatar: "https://secure.gravatar.com/avatar/%{gravatar_id}?s=%{size}"
+  edit_gravatar: "http://gravatar.com/emails"
+helpers:
+  users:
+    size_default: 80
 
+views:
+  users:
+    size: 50
+controllers:
+  users:
+    per_page: 5
 models:
   user:
     name:
