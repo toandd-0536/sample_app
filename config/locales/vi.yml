@@ -1,5 +1,12 @@
 en:
   layout:
+    header:
+      users: "Người dùng"
+      account: "Tài khoản"
+      profile: "Thông tin"
+      settings: "Cài đặt"
+      logout: "Đăng xuất"
+      login: "Đăng nhập"
     base_title: "Ứng dụng mẫu hướng dẫn Ruby on Rails"
     nav:
       home: "Trang chủ"
@@ -30,7 +37,19 @@ en:
       errors_title: "Biểu mẫu có những lỗi sau: "
       error: 
         name: "lỗi"
+  sessions: 
+    new:
+      new_name: "Đăng nhập"
+      title: "ĐĂNG NHẬP"
+      btn: "Đăng nhập"
+      new_user?: "Người dùng mới?"
+      signup: "Đăng ký ngay!"
   controllers:
     users:
       created_message: "Đăng ký người dùng thành công"
       find_message_error: "Không tìm thấy người dùng hợp lệ"
+    sessions:
+      login_message: "Đăng nhập thành công"
+      logout_message: "Đăng xuất thành công"
+      danger: "Tài khoản hoặc mật khẩu không chính xác"
+
