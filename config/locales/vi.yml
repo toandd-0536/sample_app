@@ -56,7 +56,42 @@ en:
       new_user?: "Người dùng mới?"
       signup: "Đăng ký ngay!"
       remember: "Nhớ tôi trên thiết bị này"
+      forgot_password: "(Quên mật khẩu)"
+  password_resets:
+    new:
+      new_name: "Quên mật khẩu"
+      title: "QUÊN MẬT KHẨU"
+      btn: "Gửi"
+    edit:
+      edit_name: "QUÊN MẬT KHẨU"
+      title: "Đặt lại mật khẩu"
+      label: "Xác nhận mật khẩu mới"
+      btn: "Cập nhật mật khẩu"
+  user_mailer:
+    account:
+      account_name: "Sample App"
+      hello: "Chào %{username},"
+      body: "Chào mừng đến với Sample App! Nhấp vào liên kết bên dưới để kích hoạt tài khoản của bạn:"
+      active: "Kích hoạt"
+    password_reset:
+      title: "Đặt lại mật khẩu"
+      click_link: "Để đặt lại mật khẩu, hãy nhấp vào liên kết bên dưới:"
+      link: "Đặt lại mật khẩu"
+      time: "Liên kết này sẽ hết hạn sau hai giờ."
+      notify: "Nếu bạn không yêu cầu đặt lại mật khẩu,
+               vui lòng bỏ qua email này và mật khẩu của bạn sẽ được giữ nguyên."
   controllers:
+    password_resets:
+      found_error: "Không tồn tại người dùng!"
+      active_error: "Người dùng chưa được kích hoạt!"
+      empty_error: "Mật khẩu trống!"
+      success: "Cập nhật mật khẩu thành công"
+      notify: "Đã gửi thông báo cập nhật mật khẩu đến email người dùng"
+      send_error: "Địa chỉ email không tồn tại" 
+      time_error: "Đặt lại mật khẩu đã quá hạn!"
+    account_activations: 
+      success: "Kích hoạt thành công"
+      error: "Đường link có lỗi!"
     login_error: "Hãy đăng nhập trước khi truy cập vào đây!"
     users:
       created_message: "Đăng ký người dùng thành công"
@@ -70,4 +105,12 @@ en:
       login_message: "Đăng nhập thành công"
       logout_message: "Đăng xuất thành công"
       danger: "Tài khoản hoặc mật khẩu không chính xác"
+      warning: "Tài khoản chưa được kích hoạt. Kiểm tra email của bạn để biết liên kết kích hoạt."
+  mailers:
+    user:
+      subject: "Kích hoạt tài khoản"   
+    reset_pass:
+      subject: "Đặt lại mật khẩu" 
+
+      
 

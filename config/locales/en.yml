@@ -87,7 +87,42 @@ en:
       new_user?: "New User?"
       signup: "Sign Up Now!"
       remember: "Remember me on this computer"
+      forgot_password: "(forgot password)"
+  password_resets:
+    new:
+      new_name: "Forgot password"
+      title: "FORGOT PASSWORD"
+      btn: "Submit"
+    edit:
+      edit_name: "FORGOT PASSWORD"
+      title: "Reset password"
+      label: "Confirmation"
+      btn: "Update password"
+  user_mailer:
+    account:
+      account_name: "Sample App"
+      hello: "Hi %{username}"
+      body: "Welcome to the Sample App! Click on the link below to activate your account:"
+      active: "Activate"
+    password_reset:
+      title: "Password reset"
+      click_link: "To reset your password click the link below:"
+      link: "Reset password"
+      time: "This link will expire in two hours."
+      notify: "If you did not request your password to be reset, 
+               please ignore this email and your password will stayas it is."
   controllers:
+    password_resets:
+      found_error: "User not found!"
+      active_error: "User is in_actived!"
+      empty_error: "Password is found!"
+      success: "Updated completed successfully"
+      notify: "Email sent with password reset instructions"
+      send_error: "Email address not found"
+      time_error: "Password reset has expired."
+    account_activations: 
+      success: "Successful activation"
+      error: "The link is broken!"
     login_error: "Please log in."
     users:
       created_message: "User created successfully"
@@ -101,3 +136,9 @@ en:
       login_message: "Logged in successfully"
       logout_message: "Logout successfully"
       danger: "Email or password is incorrect"
+      warning: "Account not activated. Check your email for the activation link."
+  mailers:
+    user:
+      subject: "Account Activation"
+    reset_pass:
+      subject: "Reset Password" 
