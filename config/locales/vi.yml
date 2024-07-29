@@ -56,7 +56,16 @@ en:
       new_user?: "Người dùng mới?"
       signup: "Đăng ký ngay!"
       remember: "Nhớ tôi trên thiết bị này"
+  user_mailer:
+    account:
+      account_name: "Sample App"
+      hello: "Chào %{username},"
+      body: "Chào mừng đến với Sample App! Nhấp vào liên kết bên dưới để kích hoạt tài khoản của bạn:"
+      active: "Kích hoạt"
   controllers:
+    account_activations: 
+      success: "Kích hoạt thành công"
+      error: "Đường link có lỗi!"
     login_error: "Hãy đăng nhập trước khi truy cập vào đây!"
     users:
       created_message: "Đăng ký người dùng thành công"
@@ -70,4 +79,10 @@ en:
       login_message: "Đăng nhập thành công"
       logout_message: "Đăng xuất thành công"
       danger: "Tài khoản hoặc mật khẩu không chính xác"
+      warning: "Tài khoản chưa được kích hoạt. Kiểm tra email của bạn để biết liên kết kích hoạt."
+  mailers:
+    user:
+      subject: "Kích hoạt tài khoản"    
+
+      
 

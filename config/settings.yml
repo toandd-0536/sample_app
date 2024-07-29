@@ -7,7 +7,8 @@ links:
 helpers:
   users:
     size_default: 80
-
+mailers:
+  default_mail: "thuymaitoanki@gmail.com"
 views:
   users:
     size: 50
