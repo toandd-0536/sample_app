@@ -5,7 +5,8 @@ class UsersController < ApplicationController
   before_action :admin_user, only: :destroy
 
   def index
-    @pagy, @users = pagy(User.ordered, limit: Settings.controllers.users.per_page)
+    @pagy, @users = pagy(User.ordered,
+                         limit: Settings.controllers.users.per_page)
   end
 
   def new
@@ -17,9 +18,9 @@ class UsersController < ApplicationController
   def create
     @user = User.new(user_params)
     if @user.save
-      log_in @user
+      @user.send_activation_email
       flash[:success] = t "controllers.users.created_message"
-      redirect_to @user
+      redirect_to root_url, status: :see_other
     else
       render :new, status: :unprocessable_entity
     end
