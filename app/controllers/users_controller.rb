@@ -13,7 +13,10 @@ class UsersController < ApplicationController
     @user = User.new
   end
 
-  def show; end
+  def show
+    @pagy, @microposts = pagy(@user.microposts,
+                              limit: Settings.controllers.users.post_per_page)
+  end
 
   def create
     @user = User.new(user_params)
@@ -49,7 +52,7 @@ class UsersController < ApplicationController
   private
   def user_params
     params.require(:user)
-          .permit(:name, :password, :email, :password_confirmation)
+          .permit User::ALLOWED_USER_PARAMS
   end
 
   def find_user

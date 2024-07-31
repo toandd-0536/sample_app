@@ -1,4 +1,4 @@
-en:
+vi:
   layout:
     header:
       users: "Người dùng"
@@ -32,6 +32,12 @@ en:
     confirm_pass: "Nhập lại mật khẩu"
     errors_title: "Biểu mẫu có những lỗi sau: "
     confirm_delete: "Bạn có chắc chắn với hành động này?"
+    _micropost_form:
+      placeholder: "Nhập nội dung bài viết..."
+      btn: "Đăng"
+    _user_info:
+      view: "Xem thông tin"
+      unit: "Bài viết"
     _user:
       btn: "Xóa"
     error: 
@@ -80,7 +86,17 @@ en:
       time: "Liên kết này sẽ hết hạn sau hai giờ."
       notify: "Nếu bạn không yêu cầu đặt lại mật khẩu,
                vui lòng bỏ qua email này và mật khẩu của bạn sẽ được giữ nguyên."
+  microposts:
+    _micropost:
+      time: "Đã đăng %{time} trước"
+      btn_delete: "Xóa"
+      confirm: "Bạn có chắc chắn muốn xóa?"
   controllers:
+    microposts:
+      success: "Tạo bài viết thành công"
+      delete_success: "Xóa bài viết thành công"
+      delete_failure: "Gặp lỗi khi xóa bài viết"
+      user_error: "Không thể tạo bài viết"
     password_resets:
       found_error: "Không tồn tại người dùng!"
       active_error: "Người dùng chưa được kích hoạt!"
@@ -111,7 +127,10 @@ en:
       subject: "Kích hoạt tài khoản"   
     reset_pass:
       subject: "Đặt lại mật khẩu" 
-
+  models:
+    microposts:
+      img_error: "Sai định dạng ảnh"
+      size_error: "Kích thước quá lớn (<5MB)"
 
       
 
