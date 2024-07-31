@@ -17,6 +17,7 @@ controllers:
     per_page: 5
 models:
   user:
+    reset_sent_at: 2
     name:
       max_length: 50
     email:

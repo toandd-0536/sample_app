@@ -15,7 +15,7 @@ class SessionsController < ApplicationController
         redirect_to root_url, status: :see_other
       end
     else
-      flash.now[:danger] = t("controllers.sessions.danger")
+      flash.now[:danger] = t "controllers.sessions.danger"
       render :new, status: :unprocessable_entity
     end
   end
