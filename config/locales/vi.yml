@@ -13,6 +13,8 @@ vi:
       help: "Hỗ trợ"
       login: "Đăng nhập"
       app_name: "Ứng dụng mẫu"
+      follower: "Theo dõi"
+      following: "Đang theo dõi"
   static_pages:
     home:
       home_name: "Ứng dụng mẫu"
@@ -32,6 +34,13 @@ vi:
     confirm_pass: "Nhập lại mật khẩu"
     errors_title: "Biểu mẫu có những lỗi sau: "
     confirm_delete: "Bạn có chắc chắn với hành động này?"
+    show_follow:
+      profile: "Thông tin cá nhân"
+      post: "Số bài viết:"
+    _follow:
+      btn: "Theo dõi"
+    _unfollow:
+      btn: "Bỏ theo dõi"
     _micropost_form:
       placeholder: "Nhập nội dung bài viết..."
       btn: "Đăng"
@@ -110,6 +119,8 @@ vi:
       error: "Đường link có lỗi!"
     login_error: "Hãy đăng nhập trước khi truy cập vào đây!"
     users:
+      following: "Đang theo dõi"
+      follower: "Người theo dõi"
       created_message: "Đăng ký người dùng thành công"
       updated_message: "Cập nhật thông tin thành công"
       find_message_error: "Không tìm thấy người dùng hợp lệ"
@@ -131,6 +142,4 @@ vi:
     microposts:
       img_error: "Sai định dạng ảnh"
       size_error: "Kích thước quá lớn (<5MB)"
-
-      
 

@@ -13,6 +13,8 @@ en:
       help: "Help"
       login: "Login"
       app_name: "Sample app"
+      follower: "followers"
+      following: "following"
   static_pages:
     home:
       home_name: "Sample App"
@@ -32,6 +34,13 @@ en:
     confirm_pass: "Confirmation"
     errors_title: "The form contains errors: "
     confirm_delete: "Are you sure you want to delete"
+    show_follow:
+      profile: "view my profile"
+      post: "Microposts:"
+    _follow:
+      btn: "Follow"
+    _unfollow:
+      btn: "Unfollow"
     _micropost_form:
       placeholder: "Compose new micropost..."
       btn: "Post"
@@ -47,7 +56,7 @@ en:
       title: "LIST USERS"  
     new:
       new_name: "Sign up"
-      new_title: "SIGN UP"
+      title: "SIGN UP"
       btn: "Create my account"
     edit:
       edit_name: "Update profile"
@@ -110,6 +119,8 @@ en:
       error: "The link is broken!"
     login_error: "Please log in."
     users:
+      following: "Following"
+      follower: "Follower"
       created_message: "User created successfully"
       updated_message: "Profile updated successfully"
       find_message_error: "No valid user found"

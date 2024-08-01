@@ -10,6 +10,7 @@ class Micropost < ApplicationRecord
             size: {less_than: Settings.models.micropost.img_size.megabytes,
                    message: I18n.t("models.microposts.size_error")}
   scope :recent_posts, ->{order created_at: :desc}
+  scope :relate_post, ->(user_ids){where user_id: user_ids}
   has_one_attached :image do |attachable|
     attachable.variant :display,
                        resize_to_limit: [Settings.models.micropost.from,
