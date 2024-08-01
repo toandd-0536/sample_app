@@ -1,7 +1,7 @@
 class UsersController < ApplicationController
-  before_action :logged_in_user, only: %i(edit update show destroy)
+  before_action :logged_in_user, except: %i(new create show)
   before_action :find_user, except: %i(index new create)
-  before_action :correct_user, only: %i(show edit update)
+  before_action :correct_user, only: %i(edit update)
   before_action :admin_user, only: :destroy
 
   def index
@@ -47,6 +47,20 @@ class UsersController < ApplicationController
       flash[:danger] = t "controllers.users.destroyed_message_error"
     end
     redirect_to users_path
+  end
+
+  def following
+    @title = t "controllers.users.following"
+    @pagy, @users = pagy(@user.following,
+                         limit: Settings.controllers.users.per_page)
+    render :show_follow
+  end
+
+  def followers
+    @title = t "controllers.users.follower"
+    @pagy, @users = pagy(@user.followers,
+                         limit: Settings.controllers.users.per_page)
+    render :show_follow
   end
 
   private

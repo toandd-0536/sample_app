@@ -12,6 +12,7 @@ mailers:
 views:
   users:
     size: 50
+    mini_size: 30
   microposts:
     type: "image/jpeg,image/gif,image/png"
 controllers:
