@@ -1,4 +1,7 @@
 class User < ApplicationRecord
+  ALLOWED_USER_PARAMS = %i(name password email password_confirmation)
+  ALLOWED_PASSWORD_PARAMS = %i(password password_confirmation)
+  has_many :microposts, dependent: :destroy
   has_secure_password
   before_save :downcase_email
   before_create :create_activation_digest
@@ -13,6 +16,10 @@ class User < ApplicationRecord
   attr_accessor :remember_token, :activation_token, :reset_token
 
   scope :ordered, ->{order :created_at}
+
+  def feed
+    microposts
+  end
 
   def password_reset_expired?
     reset_sent_at < Settings.models.user.reset_sent_at.hours.ago

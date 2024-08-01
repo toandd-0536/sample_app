@@ -6,16 +6,24 @@ links:
   edit_gravatar: "http://gravatar.com/emails"
 helpers:
   users:
-    size_default: 80
+    size_default: 50
 mailers:
   default_mail: "thuymaitoanki@gmail.com"
 views:
   users:
     size: 50
+  microposts:
+    type: "image/jpeg,image/gif,image/png"
 controllers:
   users:
     per_page: 5
+    post_per_page: 10
 models:
+  micropost:
+    content_length: 140
+    img_size: 5
+    from: 500
+    to: 500
   user:
     reset_sent_at: 2
     name:

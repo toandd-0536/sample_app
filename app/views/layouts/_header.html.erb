@@ -1,7 +1,7 @@
 <header class="navbar navbar-fixed-top navbar-inverse">
   <div class="container"><%= link_to t("layout.nav.app_name"), "#", id: "logo" %><nav>
       <ul class="nav navbar-nav navbar-right">
-        <li><%= link_to t("layout.nav.home"), "#" %></li>
+        <li><%= link_to t("layout.nav.home"), root_path %></li>
         <li><%= link_to t("layout.nav.help"), "#" %></li>
         <% if logged_in? %>
           <li><%= link_to t("layout.header.users"), users_path %></li>
